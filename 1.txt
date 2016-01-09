@@ -1,0 +1,98 @@
+
+		--------------------------------------------
+		         Planar Frame Analysis Program      
+		Introduction to Structural Analysis & Design
+		           (c) 2000-14, S. D. Rajan         
+		         Enhanced By: Anshul Bahukhandi        
+		--------------------------------------------
+
+ 
+Number of Nodes :3
+Number of Elements:2
+
+____________________________________________________________________________________________
+
+
+Nodal cordinates
+    # NodeX CordinateY coordinate
+              1              0              0
+              2              6              0
+              3             10              0
+____________________________________________________________________________________________
+
+
+# Node    X-FIXITY     Y-FIXITY    MZ FIXITY
+   1       Specified       Specified       Specified
+   2       Free       Specified       Free
+   3       Specified       Specified       Specified
+____________________________________________________________________________________________
+
+
+# Node    X-Force    Y-Force    Z Moment         Temperature
+   1        0        0        0         -4.31602e+008
+   2        0        0        0         -4.31602e+008
+   3        0        0        0         -4.31602e+008
+____________________________________________________________________________________________
+
+Element    Load Type                         Value1    value2
+1           Linearly Distributed            -3000           -3000
+2           Linearly Distributed            -3000           -3000
+____________________________________________________________________________________________
+
+
+#Element  START NODE  END NODE  ELASTICITY  THERMAL COEFFICIENT
+         1         1         2         4e+010         0
+         2         2         3         4e+010         0
+____________________________________________________________________________________________
+
+
+#ELEMENT   X/S AREA   MOI about y axis:  MOI about z axis:
+1          0.125         0.000651042          0.00260417
+2          0.125         0.000651042          0.00260417
+____________________________________________________________________________________________
+
+
+#NODE   X Reaction   Y Reaction   Moment
+1         0             9500       10000
+2         0            15625           0
+3         0             4875       -2500
+____________________________________________________________________________________________
+
+
+#NODE   X Displacement   Y Displacement   Rotation about Z
+1                 0                 0                 0
+2                 0                 0         2.88e-005
+3                 0                 0                 0
+____________________________________________________________________________________________
+
+ELEMENT NODAL FORCES IN GLOBAL CORDINATES
+
+-------------------------------------------
+Fx start node  Fy start node  Mz start node    Fx end node    Fy end node    Mz end node
+
+ELEMENT : 1
+0             9500            10000                0             8500            -7000
+      
+ELEMENT : 2
+0             7125             7000                0             4875            -2500
+____________________________________________________________________________________________
+
+
+Maximum Tensile Stress in Element 1 is :  960000
+Maximum Compressive Stress in Element 1 is :  -960000
+Maximum Shear Stress in Element 1 is :  114000
+
+
+
+
+Maximum Tensile Stress in Element 2 is :  672000
+Maximum Compressive Stress in Element 2 is :  -672000
+Maximum Shear Stress in Element 2 is :  85500
+
+
+____________________________________________________________________________________________
+
+
+ Residual Error: 0
+Absolute Error: 0
+____________________________________________________________________________________________
